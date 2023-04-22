@@ -50,10 +50,6 @@ namespace Kenshi
        
     }
 
-    public class BuildingManagerRuntimeController : AbstractBuildingController
-    { 
-    }
-
     public partial class BuildingConstructManager : SingletonBehaviour<BuildingConstructManager>
     {
         [SerializeField] private CinemachineVirtualCamera buildingCamera; 

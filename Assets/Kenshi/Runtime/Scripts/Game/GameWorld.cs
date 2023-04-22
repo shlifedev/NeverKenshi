@@ -1,10 +1,13 @@
 using System.Collections;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEditor.EditorTools;
 using UnityEditor.Overlays;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Profiling;
+using UnityEngine.Rendering;
 using UnityEngine.UIElements;
 
 namespace Kenshi
@@ -25,29 +28,11 @@ namespace Kenshi
         }
     }
 
-
-    [Overlay(typeof(SceneView), " Builder Tool", true)]
-    public class GameWorldEditorToolOverlay : Overlay
-    {
-        public override VisualElement CreatePanelContent()
-        {
-            var root = new VisualElement() { name = "My Toolbar Root" };
-            root.Add(new Label() { text = "Hello" });
-            return root;
-        }
-    }
-
+ 
     [EditorTool("Activated GameWorld", typeof(GameWorld))] 
-    public class GameWorldEditorTool : EditorTool, ISupportsOverlays { 
-        void OnEnable()
-        {
-            // Allocate unmanaged resources or perform one-time set up functions here
-            Debug.Log(" game world editor tool"); 
-        }
+    public class GameWorldEditorTool : EditorTool, ISupportsOverlays {
+   
 
-        void OnDisable()
-        { 
-        }
         public override void OnActivated()
         {
             SceneView.lastActiveSceneView.ShowNotification(new GUIContent("Entering Platform Tool"), .1f);
@@ -60,34 +45,27 @@ namespace Kenshi
         }
 
         public override void OnToolGUI(EditorWindow window)
-        {
-            if (!(window is SceneView sceneView))
-                return;
-
-            Handles.BeginGUI();
-            var world = target as GameWorld;
-         
+        {   
+            Profiler.BeginSample("GameWorld"); 
+            var world = target as GameWorld; 
             var ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition); 
-            if(Physics.Raycast(ray, out var raycastResult, 10000))
-            {  
-                Graphics.DrawMesh(world.preBuildingMesh, raycastResult.point, Quaternion.identity, world.mat, 0);
-                Handles.color = Color.red;
-                Handles.DrawWireCube(raycastResult.point + world.preBuildingMesh.bounds.center, Vector3.one * 8);
-                Handles.DrawLine(raycastResult.point + world.preBuildingMesh.bounds.center, Vector3.one);
-                Handles.Label(raycastResult.point + world.preBuildingMesh.bounds.center, "center"); 
+            if(Physics.Raycast(ray, out var hit, 10000))
+            {    
+                var cmd = new CommandBuffer();
+                var cam = SceneView.currentDrawingSceneView.camera;  
+                Vector3 dir = hit.point - hit.normal;
+                var rot = Quaternion.LookRotation(dir); 
+                var trs = Matrix4x4.TRS(hit.point, quaternion.identity, Vector3.one); 
+                cmd.DrawMesh(world.preBuildingMesh, trs, world.mat);  
+                Graphics.ExecuteCommandBuffer(cmd);
+                Handles.color = Color.green;
+                Handles.DrawLine(hit.point, hit.point + (hit.normal * 2), 1.25f); 
+      
             }
-            SceneView.currentDrawingSceneView.Repaint();
-            Handles.EndGUI();
-        }
-        
-        
 
-        // IDrawSelectedHandles interface allows tools to draw gizmos when the target objects are selected, but the tool
-        // has not yet been activated. This allows you to keep MonoBehaviour free of debug and gizmo code.
-        public void OnDrawHandles()
-        {
-           
-        }
+            Profiler.EndSample();
+
+        } 
     }
 }
 

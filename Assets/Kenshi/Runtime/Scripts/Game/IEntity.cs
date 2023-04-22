@@ -3,7 +3,7 @@ namespace Kenshi
 {
     public interface IEntity
     {
-
+        
     }
 
     public interface IMoveable
