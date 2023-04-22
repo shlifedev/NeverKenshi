@@ -31,7 +31,7 @@
 !/Assets/
 /Assets/*
 
-!Assets/Kenshi
+!Assets/Kenshi/Scripts
 !Assets/BOM
 
 
