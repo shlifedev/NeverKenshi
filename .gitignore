@@ -32,6 +32,7 @@
 /Assets/*
 
 !Assets/Kenshi
+!Assets/BOM
 
 
 .plastic
