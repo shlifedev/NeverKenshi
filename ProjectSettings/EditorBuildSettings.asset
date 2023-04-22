@@ -1,0 +1,643 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/WorldStreaming.unity
+    guid: 966695ef063c37c449c0820ee288285f
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Standard.unity
+    guid: 1bfafb1c154a1084eb89fe3ac8860b7b
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_0_0-20230420
+      - 123459.unity
+    guid: 76338362567433b4cb8412fef178e0ee
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_0_1-20230420
+      - 123459.unity
+    guid: 886b91ffbf389e34497fa80dfba8aba5
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_0_2-20230420
+      - 123459.unity
+    guid: 2b136cdd318ffd749926b35a44be545b
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_0_3-20230420
+      - 123459.unity
+    guid: c7af5805f0935e047825b2400a6acab8
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_1_0-20230420
+      - 123459.unity
+    guid: 8fdd786b751b90f4d8ecfa0991925b6d
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_1_1-20230420
+      - 123459.unity
+    guid: 0e2885c57da47744c8ebf02c5e6692f2
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_1_2-20230420
+      - 123459.unity
+    guid: 7d4fe7303dc26464fbec17c466de471b
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_1_3-20230420
+      - 123459.unity
+    guid: 29a11cc97d10b8740b448117373f0422
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_2_0-20230420
+      - 123459.unity
+    guid: ec5e26786f1f91a4ba70c30ced3d3e94
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_2_1-20230420
+      - 123459.unity
+    guid: e2a4841334d4fcb4b96176348fd5335d
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_2_2-20230420
+      - 123459.unity
+    guid: 663ad670b97eb634e9f0ee26529991dd
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_2_3-20230420
+      - 123459.unity
+    guid: b7d32980010961142930d4433bb86e3c
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_3_0-20230420
+      - 123459.unity
+    guid: 565a60038b5c744499b611ba4430be95
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_3_1-20230420
+      - 123459.unity
+    guid: 53960a599e58ad846b527c0acae09668
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_3_2-20230420
+      - 123459.unity
+    guid: 53dada750d108f746ae979890bd7978f
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 012518/Terrain Scenes/Terrain_3_3-20230420
+      - 123459.unity
+    guid: 1846d427d0e77d5488cd2c72e901db51
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_0_0-20230420
+      - 171128.unity
+    guid: e83d961da0d18ea4986efbaa1fbee5eb
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_0_1-20230420
+      - 171128.unity
+    guid: 5a35914986fe85a4ea2eb2d4a7ea5a0f
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_0_2-20230420
+      - 171128.unity
+    guid: 478f5abd3aa264f4da672d9a20050443
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_0_3-20230420
+      - 171128.unity
+    guid: 70b7a62c0f30892458b2bf779975f52d
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_1_0-20230420
+      - 171128.unity
+    guid: 90c082d959647254d9d0c304969bd53d
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_1_1-20230420
+      - 171128.unity
+    guid: 360e6154c3de7d946bab87483f710530
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_1_2-20230420
+      - 171128.unity
+    guid: aa8e236b9c915474c8636a3e88feca15
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_1_3-20230420
+      - 171128.unity
+    guid: 709ff18a93b810b47b6789d29e467e8d
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_2_0-20230420
+      - 171128.unity
+    guid: 0b2a1c30c9e11924a9c97bd5c2d48293
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_2_1-20230420
+      - 171128.unity
+    guid: 63902842ae5107745959d317a3a6ca05
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_2_2-20230420
+      - 171128.unity
+    guid: 129371a238d780545b19d27f3f1f0b5c
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_2_3-20230420
+      - 171128.unity
+    guid: ed12f3c6703b66e4692ab317d2dcfda6
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_3_0-20230420
+      - 171128.unity
+    guid: d72908590dec7da48904944cdc356e17
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_3_1-20230420
+      - 171128.unity
+    guid: 9c1ea78de3761894e9134e998bddfb25
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_3_2-20230420
+      - 171128.unity
+    guid: 73465c104c0464e4bad8ccdbc1e1b248
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Impostor Scenes/Impostor_3_3-20230420
+      - 171128.unity
+    guid: 41c3ccb5d6a489c47839c1f0dd7c4fbe
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_0_0-20230420
+      - 184112.unity
+    guid: 78ab3a14369300344989e93c3e4dc742
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_0_1-20230420
+      - 184112.unity
+    guid: d084b1e38ecb44944ab781da274c2f1e
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_0_2-20230420
+      - 184112.unity
+    guid: 1b0eda8860a980c4d81f0da467729d93
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_0_3-20230420
+      - 184112.unity
+    guid: 5621095a06601cd42944481e3fae52ca
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_1_0-20230420
+      - 184112.unity
+    guid: 2ded1aacd48f0a646be8b8808faec33c
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_1_1-20230420
+      - 184112.unity
+    guid: a7c1ae2fcda309841a23542d31eb4f59
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_1_2-20230420
+      - 184112.unity
+    guid: dec5df42981e74845a8ebfae4f18e812
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_1_3-20230420
+      - 184112.unity
+    guid: 8a41e17355b65854fa90ebccdc8c24fb
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_2_0-20230420
+      - 184112.unity
+    guid: 50745394389de304ea480b2589754de2
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_2_1-20230420
+      - 184112.unity
+    guid: b64474182fafcc741b3c42b886a4f146
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_2_2-20230420
+      - 184112.unity
+    guid: 5f7bce9f51ec83b468d3704f7d34ffb0
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_2_3-20230420
+      - 184112.unity
+    guid: 45c253c2532942a4babea3ebfabe04fe
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_3_0-20230420
+      - 184112.unity
+    guid: 04b090d496f5c944fac8d6b56df04bce
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_3_1-20230420
+      - 184112.unity
+    guid: 178a9c6cf3be5b841963d2a16c594972
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_3_2-20230420
+      - 184112.unity
+    guid: 62d72f5db4ea2fc4ab01371085c88351
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20230420 - 150609/Terrain Scenes/Terrain_3_3-20230420
+      - 184112.unity
+    guid: c854a5b736b90944f8086f6976da80e2
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 5fadb0d320dbb474c8fe756698fd1376,
+      type: 2}
