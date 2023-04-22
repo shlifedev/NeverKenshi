@@ -5,11 +5,15 @@ using UnityEditor;
 using UnityEngine;
 namespace Kenshi
 {
-    
-    
-    public abstract class Entity : MonoBehaviour, IEntity
-    {
-        public abstract Transform Root { get; } 
 
+    public interface IDrawable
+    {
+        public MeshRenderer MeshRenderer { get; set; }
+        public MeshFilter MeshFilter { get; set; }
+    }
+    
+    public abstract class Entity : MonoBehaviour 
+    {
+        public abstract Transform Root { get; }  
     }
 }

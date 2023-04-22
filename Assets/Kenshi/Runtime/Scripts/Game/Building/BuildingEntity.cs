@@ -1,12 +1,6 @@
-﻿using System;
-using BOM.Editor;
-using UnityEditor.EditorTools;
-using UnityEditor.Overlays;
-using UnityEditor.Toolbars;
-using UnityEngine;
-using UnityEngine.UIElements;
-#if UNITY_EDITOR
-using UnityEditor;
+﻿using System; 
+using UnityEngine; 
+#if UNITY_EDITOR 
 #endif
 namespace Kenshi
 {  
@@ -43,10 +37,23 @@ namespace Kenshi
     }
 
 
-    public class BuildingEntity : Entity
+    public class BuildingEntity : Entity, IDrawable
     {
-        public override Transform Root { get; }
-        public MeshRenderer meshRenderer;
-        public BuildingConstructData constructData;  
+        public override Transform Root { get; }  
+        public BuildingConstructData constructData;
+        [SerializeField] private MeshRenderer _meshRenderer;
+        [SerializeField] private MeshFilter _meshFilter;
+
+        public MeshRenderer MeshRenderer
+        {
+            get => _meshRenderer;
+            set => _meshRenderer = value;
+        }
+
+        public MeshFilter MeshFilter
+        {
+            get => _meshFilter;
+            set => _meshFilter = value;
+        }
     }
 }

@@ -11,6 +11,17 @@ namespace Kenshi
         [SerializeField] private Transform root;
         [SerializeField] private Animator animator;
 
+        public Vector3 Position
+        {
+            get
+            {
+                return this.transform.position;
+            }
+            set
+            {
+                this.transform.position = value;
+            }
+        }
         public override Transform Root
         {
             get => root;
@@ -25,6 +36,7 @@ namespace Kenshi
         {
             throw new NotImplementedException();
         }
+ 
 
         public void MoveToDirection(Vector3 direction)
         {

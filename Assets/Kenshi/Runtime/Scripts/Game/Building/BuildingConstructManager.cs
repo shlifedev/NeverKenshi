@@ -1,15 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+ 
 using BOM;
-using Cinemachine;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.PackageManager;
-using UnityEditor.TerrainTools;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements;
-
+using Cinemachine; 
+using UnityEngine; 
 namespace Kenshi
 {
     /// <summary>
@@ -46,8 +38,7 @@ namespace Kenshi
             public int buildingId;
             public int actionId;
             public Vector3 selectPosition;
-        }  
-       
+        }   
     }
 
     public partial class BuildingConstructManager : SingletonBehaviour<BuildingConstructManager>
