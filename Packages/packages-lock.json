@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.acegikmo.shapes": {
+      "version": "4.2.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.textmeshpro": "2.1.6"
+      },
+      "url": "http://package.shlife.dev:4873"
+    },
     "com.autodesk.fbx": {
       "version": "5.0.0",
       "depth": 2,

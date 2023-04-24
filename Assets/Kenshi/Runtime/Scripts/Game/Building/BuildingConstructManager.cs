@@ -3,6 +3,7 @@ using System;
 using BOM;
 using Cinemachine;
 using Shapes;
+using UnityEditor;
 using UnityEngine; 
 namespace Kenshi
 {
@@ -77,12 +78,12 @@ namespace Kenshi
         }
 
         public void Update()
-        { 
+        {   
             var test = Controller.RaycastAbovePoint(Input.mousePosition);
             if (test.HasValue)
-            {
+            { 
                 var entity = test.Value.collider.GetComponentInParent<BuildingEntity>();
-                Debug.Log(entity.name); 
+                Debug.Log(entity.name);  
             }
             else
             {
