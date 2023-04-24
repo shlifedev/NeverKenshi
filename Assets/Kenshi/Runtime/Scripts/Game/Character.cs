@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using UnityEditor;
 using UnityEngine;
 using NotImplementedException = System.NotImplementedException;
 
@@ -39,7 +40,7 @@ namespace Kenshi
  
 
         public void MoveToDirection(Vector3 direction)
-        {
+        { 
             Root.transform.Translate(direction.normalized * Time.deltaTime);
         }
     }

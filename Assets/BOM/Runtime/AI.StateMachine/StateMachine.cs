@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BOM
 {
-    internal class FSM<TOwner, TState> where TState : struct
+    internal class StateMachine<TOwner, TState> where TState : struct
     {
-        public FSM()
+        public StateMachine()
         {
         }
 

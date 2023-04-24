@@ -1,5 +1,6 @@
 ﻿using System; 
-using UnityEngine; 
+using UnityEngine;
+using UnityEngine.Serialization;
 #if UNITY_EDITOR 
 #endif
 namespace Kenshi
@@ -7,7 +8,7 @@ namespace Kenshi
     [Serializable]
     public class BuildingConstructData
     {
-        [SerializeField] float _maxBuryHeight;
+        [FormerlySerializedAs("_maxBuryHeight")] [SerializeField] float _allowBuryHeight;
         [SerializeField] Transform _leftLinkPoint;
         [SerializeField] Transform _rightLinkPoint;
         public class ArrowHandleAttribute : PropertyAttribute
@@ -17,10 +18,10 @@ namespace Kenshi
         
         [SerializeField] [ArrowHandle] Vector3 test;
 
-        public float MaxBuryHeight
+        public float AllowBuryHeight
         {
-            get => _maxBuryHeight;
-            set => _maxBuryHeight = value;
+            get => _allowBuryHeight;
+            set => _allowBuryHeight = value;
         }
 
         public Transform LeftLinkPoint

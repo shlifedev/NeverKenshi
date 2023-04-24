@@ -1,9 +1,10 @@
-﻿namespace Kenshi
+﻿using UnityEngine;
+
+namespace Kenshi
 {
     public interface IBuildingConstructController
-    {        
-        BuildingConstructManager.BuildingState State { get; set; }
-        BuildingConstructManager Instance { get; } 
-        
+    {         
+        RaycastHit? RaycastAbovePoint(Vector2 screenPos);
+        void OnUpdate(); 
     }
 }

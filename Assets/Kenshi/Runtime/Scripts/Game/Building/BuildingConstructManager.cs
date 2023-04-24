@@ -1,6 +1,8 @@
  
+using System;
 using BOM;
-using Cinemachine; 
+using Cinemachine;
+using Shapes;
 using UnityEngine; 
 namespace Kenshi
 {
@@ -19,12 +21,19 @@ namespace Kenshi
     {      
         public enum BuildingState
         {
-            None,
-            BuildingMenu,
+            Wait = 0,
+            BuildingMenu ,
             SelectCategory,
             SelectedBuildingItem,
-            SetBuildingPos,
-            SetLink,
+            /// <summary>
+            /// Preview Building Mesh
+            /// </summary>
+            WaitPlayerSetToBuildingPoint,
+            /// <summary>
+            /// Preview Building Mesh And Lines
+            /// </summary>
+            WaitPlayerSetToBuildingLines,
+            WaitPlayerAgreeInput,
             CreateBluePrint,
             Complete
         }
@@ -40,19 +49,45 @@ namespace Kenshi
             public Vector3 selectPosition;
         }   
     }
-
+ 
     public partial class BuildingConstructManager : SingletonBehaviour<BuildingConstructManager>
     {
-        [SerializeField] private CinemachineVirtualCamera buildingCamera; 
-        public IBuildingConstructController Controller { get; set; } 
-        public void Initialize(IBuildingConstructController controller)
+        [SerializeField] private BuildingState state;
+        [SerializeField] private CinemachineVirtualCamera buildingCamera;
+
+        private IBuildingConstructController _controller;
+        public IBuildingConstructController Controller
         {
-            this.Controller = controller;
-        }  
-        public Ray GetRaycastHitPoint(Camera camera, Vector2 screenPoint)
+            get
+            {
+                if (_controller == null && Application.isPlaying)
+                {
+                    _controller = new BuildingManagerRuntimeController();
+                }
+                return _controller;
+            }
+            set
+            {
+                _controller = value;
+            }
+        } 
+        public void StartBuilding()
         {
-            var ray = camera.ScreenPointToRay(screenPoint);
-            return ray;
+            if (state != BuildingState.Wait) return;  
+        }
+
+        public void Update()
+        { 
+            var test = Controller.RaycastAbovePoint(Input.mousePosition);
+            if (test.HasValue)
+            {
+                var entity = test.Value.collider.GetComponentInParent<BuildingEntity>();
+                Debug.Log(entity.name); 
+            }
+            else
+            {
+                Debug.Log("Sad");
+            }
         }
     }
 }
