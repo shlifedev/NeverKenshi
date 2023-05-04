@@ -7,6 +7,7 @@ namespace Kenshi
     [RequireComponent(typeof(Entity))]
     public class KenshiCharacterController : MonoBehaviour 
     {
+        [SerializeField] private KenshiControll kenshControll; 
         public float speed = 3;
  
         public Entity entity;

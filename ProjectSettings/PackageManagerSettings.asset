@@ -31,10 +31,8 @@ MonoBehaviour:
     m_Name: package.openupm.com
     m_Url: https://package.openupm.com
     m_Scopes:
-    - com.inspiaaa
+    - com.inspiaaa.unityhfsm
     - com.openupm
-    - com.shlifedev
-    - com.cysharp
     m_IsDefault: 0
     m_Capabilities: 0
     m_ConfigSource: 4
@@ -42,7 +40,8 @@ MonoBehaviour:
     m_Name: shlifedev's package server
     m_Url: http://package.shlife.dev:4873
     m_Scopes:
-    - com.acegikmo
+    - '@com.shlifedev'
+    - com
     m_IsDefault: 0
     m_Capabilities: 0
     m_ConfigSource: 4
@@ -51,6 +50,6 @@ MonoBehaviour:
   m_RegistryInfoDraft:
     m_Modified: 0
     m_ErrorMessage: 
-    m_UserModificationsInstanceId: -842
+    m_UserModificationsInstanceId: -844
     m_OriginalInstanceId: -846
   m_LoadAssets: -1

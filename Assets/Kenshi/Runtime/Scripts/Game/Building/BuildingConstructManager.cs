@@ -1,10 +1,12 @@
  
 using System;
-using BOM;
+using Kit;
 using Cinemachine;
-using Shapes;
+using Unity.Collections;
 using UnityEditor;
-using UnityEngine; 
+using UnityEngine;
+using UnityEngine.InputSystem;
+
 namespace Kenshi
 {
     /// <summary>
@@ -34,7 +36,7 @@ namespace Kenshi
             /// Preview Building Mesh And Lines
             /// </summary>
             WaitPlayerSetToBuildingLines,
-            WaitPlayerAgreeInput,
+            WaitPlayerAccept,
             CreateBluePrint,
             Complete
         }
@@ -51,10 +53,14 @@ namespace Kenshi
         }   
     }
  
+    /// <summary>
+    /// Manager -> 상태만 들고있다
+    /// Contoller -> 모든 입력과 상태변경을 관리한다.
+    /// </summary>
     public partial class BuildingConstructManager : SingletonBehaviour<BuildingConstructManager>
     {
         [SerializeField] private BuildingState state;
-        [SerializeField] private CinemachineVirtualCamera buildingCamera;
+        [SerializeField] private CinemachineVirtualCamera buildingCamera; 
 
         private IBuildingConstructController _controller;
         public IBuildingConstructController Controller
@@ -74,21 +80,14 @@ namespace Kenshi
         } 
         public void StartBuilding()
         {
-            if (state != BuildingState.Wait) return;  
+            if (state != BuildingState.Wait) return;
+
+           
         }
 
         public void Update()
-        {   
-            var test = Controller.RaycastAbovePoint(Input.mousePosition);
-            if (test.HasValue)
-            { 
-                var entity = test.Value.collider.GetComponentInParent<BuildingEntity>();
-                Debug.Log(entity.name);  
-            }
-            else
-            {
-                Debug.Log("Sad");
-            }
+        {
+            Controller.OnUpdate();
         }
     }
 }

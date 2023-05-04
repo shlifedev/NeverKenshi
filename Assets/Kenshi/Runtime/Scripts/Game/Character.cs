@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using NotImplementedException = System.NotImplementedException;
 
 namespace Kenshi
-{
-    public class Character : Entity, IHitable, IMoveable
-    {
+{    
+    public class Character : Entity, IHitable, IMoveable, KenshiControll.IPlayerControllActions
+    { 
+        [SerializeField]  Vector3 test;
         [SerializeField] private Transform root;
         [SerializeField] private Animator animator;
-
+        [SerializeField] private KenshiControll kenshControll; 
         public Vector3 Position
         {
             get
@@ -31,6 +33,27 @@ namespace Kenshi
         public Animator Animator
         {
             get => animator;
+        }
+
+
+        private void Awake()
+        {
+            kenshControll = new KenshiControll();   
+            kenshControll.PlayerControll.Enable();  
+            kenshControll.PlayerControll.AddCallbacks(this);
+        }
+ 
+
+        public void OnMove(InputAction.CallbackContext context)
+        {
+            Vector2 input = context.ReadValue<Vector2>();
+            MoveToDirection(input);
+            Debug.Log(input);
+        }
+
+        public void OnNewaction(InputAction.CallbackContext context)
+        {
+             
         }
 
         public void Hit(HitInfo info)
